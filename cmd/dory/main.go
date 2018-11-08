@@ -15,7 +15,7 @@ func main() {
 	app.Usage = "Ethereum BlockNumber Syncer for kafka."
 
 	app.Action = func(c *cli.Context) error {
-		fmt.Printf("Starting Blockchain BlockNumber Syncer Service...\n")
+		fmt.Println("Starting Blockchain BlockNumber Syncer Service...")
 		return nil
 	}
 
