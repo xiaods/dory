@@ -13,7 +13,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "Dory"
 	app.Version = fmt.Sprintf("%s", version.VERSION)
-	app.Usage = "Ethereum BlockNumber Syncer for kafka."
+	app.Usage = "Blockchain Transaction Syncer for kafka."
 
 	app.Action = func(c *cli.Context) error {
 		fmt.Println("Starting Blockchain BlockNumber Syncer Service...")
