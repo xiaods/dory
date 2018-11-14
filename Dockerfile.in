@@ -1,6 +1,7 @@
 FROM ARG_FROM
 
-MAINTAINER Xiao Deshi <xiaods@gmail.com>
+# Install git + SSL ca certificates
+RUN apk update && apk add git && apk add ca-certificates
 
 ADD bin/ARG_ARCH/ARG_BIN /ARG_BIN
 

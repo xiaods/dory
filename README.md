@@ -1,4 +1,4 @@
-Blockchain data scrapper service
+Blockchain Data Scraper Service
 ================================
 
 Backgroud
@@ -9,7 +9,7 @@ blockchain transaction. So i setup this project to research a way to
 standarized the workflow.
 
 
-Target Blockchain
+Target Chain
 ------------------
 Blockchain, Ethereum
 

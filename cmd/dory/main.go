@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/xiaods/dory/pkg/crawler"
 	"github.com/xiaods/dory/pkg/version"
 	cli "gopkg.in/urfave/cli.v1"
 )
@@ -16,7 +17,9 @@ func main() {
 	app.Usage = "Blockchain Transaction Syncer for kafka."
 
 	app.Action = func(c *cli.Context) error {
-		fmt.Println("Starting Blockchain BlockNumber Syncer Service...")
+		log.Println("Starting Blockchain BlockNumber Syncer Service...")
+		// crawler.TrackingETHContract()
+		crawler.TrackingETHBalance()
 		return nil
 	}
 
